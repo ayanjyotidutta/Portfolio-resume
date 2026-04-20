@@ -82,7 +82,7 @@ function Hero() {
         <div>
           <div className="tag">About me · 01</div>
           <p className="blurb">
-            I'm a marketer fluent in AI — using generative tools, Python, and data to build smarter campaigns and tell sharper brand stories.
+            I'm a marketer fluent in AI — using LLMs, agentic AI, data and code to build smarter campaigns, extract insights, and tell sharper brand stories.
           </p>
         </div>
         <Avatar />
