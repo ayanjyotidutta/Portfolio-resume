@@ -1,4 +1,4 @@
-const MARQUEE = ['Brand Strategy', 'Campaign Management', 'Stakeholder Management', 'Digital Marketing', 'Webpage Development'];
+const MARQUEE = ['Brand Strategy', 'AI-Driven Marketing', 'Campaign Management', 'Generative AI', 'Digital Marketing', 'Python', 'Stakeholder Management', 'Marketing Analytics'];
 
 // Build one "set" as a single inline block so the two copies are identical width
 function MarqueeSet({ offset }) {
@@ -47,14 +47,15 @@ function Skills() {
           </ul>
         </Reveal>
         <Reveal className="skill-col" delay={120}>
-          <h4>Product & Craft</h4>
+          <h4>Tech & AI</h4>
           <ul>
-            <li>HTML / CSS <span className="level">learning</span></li>
-            <li>JavaScript <span className="level">learning</span></li>
-            <li>React (CDN) <span className="level">learning</span></li>
-            <li>SQL <span className="level">learning</span></li>
-            <li>Figma <span className="level">proficient</span></li>
+            <li>Python <span className="level">learning</span></li>
+            <li>SQL <span className="level">proficient</span></li>
+            <li>HTML / CSS / JS <span className="level">learning</span></li>
             <li>Power BI <span className="level">certified</span></li>
+            <li>ChatGPT / Claude / Copilot <span className="level">daily</span></li>
+            <li>Generative AI Tools <span className="level">proficient</span></li>
+            <li>JIRA <span className="level">proficient</span></li>
           </ul>
         </Reveal>
         <Reveal className="skill-col" delay={240}>

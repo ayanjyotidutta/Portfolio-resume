@@ -82,13 +82,13 @@ function Hero() {
         <div>
           <div className="tag">About me · 01</div>
           <p className="blurb">
-            I'm a marketer who got curious, started coding with AI, and never really stopped. Now aiming at product.
+            I'm a marketer fluent in AI — using generative tools, Python, and data to build smarter campaigns and tell sharper brand stories.
           </p>
         </div>
         <Avatar />
         <div className="meta" style={{ textAlign: 'right' }}>
           <div className="tag">Currently</div>
-          <p>Manager, Corporate Brand at <b>HCLTech</b>. MBA from <b>SJMSOM, IIT Bombay</b>. Open to Product Manager roles.</p>
+          <p>Manager, Corporate Brand at <b>HCLTech</b>. MBA from <b>SJMSOM, IIT Bombay</b>. Open to AI Marketing &amp; Brand Strategy roles.</p>
         </div>
       </div>
 
