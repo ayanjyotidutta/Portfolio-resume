@@ -17,7 +17,7 @@ function Avatar() {
   return (
     <div className="avatar" ref={ref}>
       <span className="sheen"></span>
-      <img src="External files/profile Image.png" alt="Ayan Jyoti Dutta" className="avatar-img" />
+      <img src="External files/Profile Image.png" alt="Ayan Jyoti Dutta" className="avatar-img" />
     </div>
   );
 }
