@@ -5,10 +5,11 @@ const WORK = [
     year: '2023 — Present',
     role: 'Manager, Corporate Brand',
     co: 'HCLTech',
-    desc: 'Leading brand strategy, global campaigns and governance for a ~$13B IT services brand.',
+    desc: 'Leading brand strategy, global campaigns and governance for a ~$14B IT services brand.',
     bullets: [
       { b: 'Brand value +15.9% YoY', t: ', making HCLTech the fastest-growing IT services brand — driven by partnerships with valuation agencies.' },
       { b: 'Gartner VOC campaign', t: ' delivered 15.6M impressions, 30+ leads, and lifted conversions 25% through AI-driven targeting.' },
+      { b: 'Awarded "Project of the Year"', t: ' For Gartner VOC Campaign among 20+ submissions from different teams across marketing.' },
       { b: 'Germany brand familiarity +15%', t: ' — turned perception surveys into geo strategies that guided annual marketing plans.' },
       { b: '₹50L Delhi Airport OOH', t: ' during AI Impact Summit 2026 — 1.2M+ impressions, coordinated end-to-end.' },
       { b: 'Brand governance', t: ' — reduced misalignment by 40%, improved compliance 25%, approved 100+ naming requests/yr.' },
@@ -59,7 +60,7 @@ function Work() {
     <section className="section container" id="work">
       <div className="section-head">
         <div className="num">— 04 / Experience</div>
-        <h2>Where I've<br/><em>worked</em>.</h2>
+        <h2>Where I've<br /><em>worked</em>.</h2>
       </div>
       <div className="work-list">
         {WORK.map((w, i) => <WorkItem key={i} item={w} idx={i} />)}

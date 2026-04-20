@@ -74,7 +74,7 @@ function Hero() {
 
       <h1>
         <span className="row"><span className="reveal r1"><em>Brand Manager,</em></span></span>
-        <span className="row"><span className="reveal r2">MBA, &amp;&nbsp; now</span></span>
+        <span className="row"><span className="reveal r2">MBA &amp;&nbsp; now,</span></span>
         <span className="row"><span className="reveal r3">I <TypeCode /></span></span>
       </h1>
 
@@ -82,7 +82,7 @@ function Hero() {
         <div>
           <div className="tag">About me · 01</div>
           <p className="blurb">
-            I'm a marketer who got curious, started shipping code, and never really stopped. Now aiming at product.
+            I'm a marketer who got curious, started coding with AI, and never really stopped. Now aiming at product.
           </p>
         </div>
         <Avatar />
