@@ -1,12 +1,12 @@
 // Small shared atoms
 const { useEffect: useEffectA, useRef: useRefA, useState: useStateA } = React;
 
-function Reveal({ children, delay = 0, as: As = 'div', className = '', ...rest }) {
+function Reveal({ children, delay = 0, type = 'up', as: As = 'div', className = '', ...rest }) {
   const [ref, inView] = useInView();
   return (
     <As
       ref={ref}
-      className={`reveal-up ${inView ? 'in' : ''} ${className}`}
+      className={`reveal-${type} ${inView ? 'in' : ''} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
       {...rest}
     >
@@ -128,29 +128,59 @@ function ThemeToggle() {
 
 function Nav() {
   const [scrolled, setScrolled] = useStateA(false);
+  const [menuOpen, setMenuOpen] = useStateA(false);
   useEffectA(() => {
     const on = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', on, { passive: true });
     return () => window.removeEventListener('scroll', on);
   }, []);
+  useEffectA(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+  const close = () => setMenuOpen(false);
   return (
-    <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
-      <div className="brand"><span className="dot"></span>Ayan Jyoti Dutta</div>
-      <div className="links">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#campaigns">Campaigns</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
-        <a href="External files/Ayan_Jyoti_Dutta_Resume.pdf" download className="resume-btn">Resume ↓</a>
-      </div>
-      <div className="nav-right">
-        <ThemeToggle />
-        <Clock />
-      </div>
-    </nav>
+    <>
+      <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
+        <div className="brand"><span className="dot"></span>Ayan Jyoti Dutta</div>
+        <div className="links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#campaigns">Campaigns</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+          <a href="External files/Ayan_Jyoti_Dutta_Resume.pdf" download className="resume-btn">Resume ↓</a>
+        </div>
+        <div className="nav-right">
+          <ThemeToggle />
+          <Clock />
+          <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
+            <span className={`ham-line ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`ham-line ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`ham-line ${menuOpen ? 'open' : ''}`}></span>
+          </button>
+        </div>
+      </nav>
+      {menuOpen && (
+        <div className="nav-mobile-overlay" onClick={close}>
+          <div className="nav-mobile-inner" onClick={e => e.stopPropagation()}>
+            <div className="nav-mobile-brand"><span className="dot"></span>Ayan Jyoti Dutta</div>
+            <div className="nav-mobile-links">
+              <a href="#about" onClick={close}>About</a>
+              <a href="#work" onClick={close}>Work</a>
+              <a href="#campaigns" onClick={close}>Campaigns</a>
+              <a href="#projects" onClick={close}>Projects</a>
+              <a href="#skills" onClick={close}>Skills</a>
+              <a href="#awards" onClick={close}>Awards</a>
+              <a href="#contact" onClick={close}>Contact</a>
+              <a href="External files/Ayan_Jyoti_Dutta_Resume.pdf" download className="nav-mobile-resume" onClick={close}>Resume ↓</a>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

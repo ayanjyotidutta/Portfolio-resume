@@ -6,6 +6,7 @@ function Awards() {
     { y: '2013', t: 'Class X · Delhi Public School, Duliajan', s: '10 / 10 CGPA' },
   ];
   const awards = [
+    { y: '2026', t: 'Awarded "Project of the Year"', s: ' For Gartner VOC Campaign among 20+ submissions from different teams across marketing.' },
     { y: '2025', t: 'Fast Growing Brand Manager of the Year', s: 'HCLTech — for partnerships with valuation agencies driving brand growth' },
     { y: '2025', t: 'Q3 Performance Recognition', s: 'Amongst 400+ marketers — for leading the Gartner VOC campaign' },
     { y: '2022', t: 'National Finalist · Tally BizWiz', s: 'Top finalist out of 2,000 teams in India' },
@@ -17,13 +18,13 @@ function Awards() {
     <section className="section container" id="awards">
       <div className="section-head">
         <div className="num">— 08 / Credentials</div>
-        <h2>Education &<br/><em>recognition</em>.</h2>
+        <h2>Education &<br /><em>recognition</em>.</h2>
       </div>
       <div className="split">
         <div>
           <h3>Education</h3>
-          {edu.map((e,i) => (
-            <Reveal key={i} className="list-item" delay={i*60}>
+          {edu.map((e, i) => (
+            <Reveal key={i} type="left" className="list-item" delay={i * 60}>
               <div className="y">{e.y}</div>
               <div>
                 <div className="t">{e.t}</div>
@@ -34,8 +35,8 @@ function Awards() {
         </div>
         <div>
           <h3>Awards & distinctions</h3>
-          {awards.map((e,i) => (
-            <Reveal key={i} className="list-item" delay={i*60}>
+          {awards.map((e, i) => (
+            <Reveal key={i} type="right" className="list-item" delay={i * 60}>
               <div className="y">{e.y}</div>
               <div>
                 <div className="t">{e.t}</div>

@@ -6,7 +6,7 @@ function LinkStrip() {
       <div className="contact-bottom" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
         <div className="col">
           <div className="k">Phone</div>
-          <div className="v"><a href="tel:+918638378703">+91 · 86383 78703 ↗</a></div>
+          <div className="v"><a href="tel:+918638378703">+91 · 8638378703 ↗</a></div>
         </div>
         <div className="col">
           <div className="k">Email</div>
@@ -18,7 +18,7 @@ function LinkStrip() {
         </div>
         <div className="col">
           <div className="k">GitHub</div>
-          <div className="v"><a href="https://github.com/ayanjyotidutta" target="_blank" rel="noreferrer">/ayanjyotidutta ↗</a></div>
+          <div className="v"><a href="https://github.com/ayanjyotidutta" target="_blank" rel="noreferrer">github.com/ayanjyotidutta ↗</a></div>
         </div>
         <div className="col">
           <div className="k">Projects</div>

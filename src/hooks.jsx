@@ -7,8 +7,8 @@ function useInView(options = {}) {
   useEffect(() => {
     if (!ref.current) return;
     const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) { setInView(true); obs.disconnect(); }
-    }, { threshold: 0.15, ...options });
+      setInView(e.isIntersecting);
+    }, { threshold: 0.12, ...options });
     obs.observe(ref.current);
     return () => obs.disconnect();
   }, []);
