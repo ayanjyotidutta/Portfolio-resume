@@ -17,8 +17,8 @@ function App() {
       <Work />
       <Campaigns />
       <Projects />
-      <Skills />
       <Awards />
+      <Skills />
       <Contact />
       <Tweaks />
     </>

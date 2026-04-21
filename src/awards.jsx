@@ -11,13 +11,13 @@ function Awards() {
     { y: '2025', t: 'Q3 Performance Recognition', s: 'Amongst 400+ marketers — for leading the Gartner VOC campaign' },
     { y: '2022', t: 'National Finalist · Tally BizWiz', s: 'Top finalist out of 2,000 teams in India' },
     { y: '2022', t: 'Summer Course: Europe Inside Out', s: 'Katholieke Universiteit Leuven, Belgium' },
-    { y: '2015', t: 'Intl. Rank 3 · Maths Olympiad', s: 'International Olympiad of Mathematics, final level' },
     { y: '—', t: 'Google PM Certificate · Google Digital Marketing', s: 'Plus Power BI Data Analytics certification' },
+    { y: '2015', t: 'Intl. Rank 3 · Maths Olympiad', s: 'International Olympiad of Mathematics, final level' },
   ];
   return (
     <section className="section container" id="awards">
       <div className="section-head">
-        <div className="num">— 08 / Credentials</div>
+        <div className="num">— 07 / Credentials</div>
         <h2>Education &<br /><em>recognition</em>.</h2>
       </div>
       <div className="split">

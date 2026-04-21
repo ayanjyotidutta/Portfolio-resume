@@ -30,7 +30,7 @@ function Skills() {
   return (
     <section className="section container" id="skills">
       <div className="section-head">
-        <div className="num">— 07 / Toolbox</div>
+        <div className="num">— 08 / Toolbox</div>
         <h2>What I am<br /><em>good at</em>.</h2>
       </div>
       <MarqueeRow />

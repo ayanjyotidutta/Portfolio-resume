@@ -148,8 +148,8 @@ function Nav() {
           <a href="#work">Work</a>
           <a href="#campaigns">Campaigns</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
           <a href="#awards">Awards</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <a href="External files/Ayan_Jyoti_Dutta_Resume.pdf" download className="resume-btn">Resume ↓</a>
         </div>
@@ -172,8 +172,8 @@ function Nav() {
               <a href="#work" onClick={close}>Work</a>
               <a href="#campaigns" onClick={close}>Campaigns</a>
               <a href="#projects" onClick={close}>Projects</a>
-              <a href="#skills" onClick={close}>Skills</a>
               <a href="#awards" onClick={close}>Awards</a>
+              <a href="#skills" onClick={close}>Skills</a>
               <a href="#contact" onClick={close}>Contact</a>
               <a href="External files/Ayan_Jyoti_Dutta_Resume.pdf" download className="nav-mobile-resume" onClick={close}>Resume ↓</a>
             </div>

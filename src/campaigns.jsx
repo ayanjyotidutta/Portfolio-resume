@@ -5,13 +5,13 @@ function GartnerViz() {
   useEffectC(() => {
     const c = ref.current; if (!c) return;
     const ctx = c.getContext('2d');
-    const resize = () => { c.width = c.offsetWidth * 2; c.height = c.offsetHeight * 2; ctx.scale(2,2); };
+    const resize = () => { c.width = c.offsetWidth * 2; c.height = c.offsetHeight * 2; ctx.scale(2, 2); };
     resize();
     let t = 0, raf;
     const loop = () => {
       t += 0.008;
       const w = c.offsetWidth, h = c.offsetHeight;
-      ctx.clearRect(0,0,w,h);
+      ctx.clearRect(0, 0, w, h);
       // Rising bars
       const n = 24;
       for (let i = 0; i < n; i++) {
@@ -36,29 +36,29 @@ function AIForceViz() {
   useEffectC(() => {
     const c = ref.current; if (!c) return;
     const ctx = c.getContext('2d');
-    c.width = c.offsetWidth * 2; c.height = c.offsetHeight * 2; ctx.scale(2,2);
+    c.width = c.offsetWidth * 2; c.height = c.offsetHeight * 2; ctx.scale(2, 2);
     let t = 0, raf;
     const loop = () => {
       t += 0.02;
       const w = c.offsetWidth, h = c.offsetHeight;
       ctx.fillStyle = '#0f0f0f';
-      ctx.fillRect(0,0,w,h);
+      ctx.fillRect(0, 0, w, h);
       // Orbiting dots
       ctx.strokeStyle = 'rgba(244,241,234,0.12)';
       ctx.lineWidth = 1;
       for (let r = 30; r < 120; r += 20) {
         ctx.beginPath();
-        ctx.arc(w/2, h/2, r, 0, Math.PI*2);
+        ctx.arc(w / 2, h / 2, r, 0, Math.PI * 2);
         ctx.stroke();
       }
       for (let i = 0; i < 8; i++) {
         const angle = t + i * (Math.PI * 2 / 8);
-        const r = 60 + Math.sin(t*1.5 + i) * 30;
-        const x = w/2 + Math.cos(angle) * r;
-        const y = h/2 + Math.sin(angle) * r;
+        const r = 60 + Math.sin(t * 1.5 + i) * 30;
+        const x = w / 2 + Math.cos(angle) * r;
+        const y = h / 2 + Math.sin(angle) * r;
         ctx.fillStyle = i % 2 === 0 ? '#f4f1ea' : getComputedStyle(document.documentElement).getPropertyValue('--accent');
         ctx.beginPath();
-        ctx.arc(x, y, 3, 0, Math.PI*2);
+        ctx.arc(x, y, 3, 0, Math.PI * 2);
         ctx.fill();
       }
       raf = requestAnimationFrame(loop);
@@ -74,13 +74,13 @@ function OOHViz() {
   useEffectC(() => {
     const c = ref.current; if (!c) return;
     const ctx = c.getContext('2d');
-    c.width = c.offsetWidth * 2; c.height = c.offsetHeight * 2; ctx.scale(2,2);
+    c.width = c.offsetWidth * 2; c.height = c.offsetHeight * 2; ctx.scale(2, 2);
     let t = 0, raf;
     const loop = () => {
       t += 0.015;
       const w = c.offsetWidth, h = c.offsetHeight;
       ctx.fillStyle = '#1a1a1a';
-      ctx.fillRect(0,0,w,h);
+      ctx.fillRect(0, 0, w, h);
       // Scrolling billboard text
       ctx.font = 'italic 600 42px "Instrument Serif", serif';
       ctx.fillStyle = '#f4f1ea';
@@ -88,12 +88,12 @@ function OOHViz() {
       const tw = ctx.measureText(text).width;
       const offset = (t * 40) % tw;
       for (let x = -offset; x < w + tw; x += tw) {
-        ctx.fillText(text, x, h/2 + 15);
+        ctx.fillText(text, x, h / 2 + 15);
       }
       // top and bottom bars
       ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--accent');
       ctx.fillRect(0, 0, w, 4);
-      ctx.fillRect(0, h-4, w, 4);
+      ctx.fillRect(0, h - 4, w, 4);
       raf = requestAnimationFrame(loop);
     };
     loop();
@@ -107,12 +107,12 @@ function Campaigns() {
     <section className="section container" id="campaigns">
       <div className="section-head">
         <div className="num">— 05 / Campaigns</div>
-        <h2>Selected brand<br/><em>campaigns</em>.</h2>
+        <h2>Selected brand<br /><em>campaigns</em>.</h2>
       </div>
       <div className="campaigns">
         <Reveal className="campaign">
           <div className="viz viz-gartner"><GartnerViz /></div>
-          <div className="tag">Global · 2024-25</div>
+          <div className="tag">Global · 2025-26</div>
           <h3>Gartner VOC</h3>
           <div className="metrics">
             <div className="m"><div className="v">15.6M</div><div className="k">Impressions</div></div>
