@@ -192,7 +192,7 @@ function Loader() {
   }, []);
   return (
     <div className={`loader ${hidden ? 'hidden' : ''}`}>
-      <div className="count">AYAN — LOADING PORTFOLIO</div>
+      <div className="count">Ayan's Portfolio loading...</div>
       <div className="line"></div>
     </div>
   );

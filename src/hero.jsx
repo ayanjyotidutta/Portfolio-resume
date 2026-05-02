@@ -23,9 +23,14 @@ function Avatar() {
 }
 
 function TypeCode() {
-  const full = 'Code';
+  const phrases = [
+    'leverage AI'
+  ];
+  const [index, setIndex] = useStateH(0);
   const [displayed, setDisplayed] = useStateH('');
   const [phase, setPhase] = useStateH('wait'); // wait → type → pause → erase → gap → type ...
+
+  const full = phrases[index];
 
   useEffectH(() => {
     const waitId = setTimeout(() => setPhase('type'), 1200);
@@ -45,6 +50,7 @@ function TypeCode() {
       id = setTimeout(() => setPhase('erase'), 600);
     } else if (phase === 'erase') {
       if (displayed.length === 0) {
+        setIndex(i => (i + 1) % phrases.length);
         id = setTimeout(() => setPhase('type'), 500);
       } else {
         id = setTimeout(() => setDisplayed(full.slice(0, displayed.length - 1)), 80 + Math.random() * 60);
