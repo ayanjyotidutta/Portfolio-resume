@@ -113,13 +113,13 @@ function Campaigns() {
         <Reveal className="campaign">
           <div className="viz viz-gartner"><GartnerViz /></div>
           <div className="tag">Global · 2025-26</div>
-          <h3>Gartner VOC</h3>
+          <h3>Gartner VOC campaign</h3>
           <div className="metrics">
-            <div className="m"><div className="v">15.6M</div><div className="k">Impressions</div></div>
+            <div className="m"><div className="v">20M+</div><div className="k">Impressions</div></div>
             <div className="m"><div className="v">30+</div><div className="k">Leads</div></div>
             <div className="m"><div className="v">+25%</div><div className="k">Conversions</div></div>
           </div>
-          <p>Global Voice-of-Customer campaign with AI-driven targeting. Lifted conversions 25% by aligning creative to account-based intent signals.</p>
+          <p>Global Voice-of-Customer campaign with AI-driven targeting. Reaching over 20M+ impressions and lifted conversions by 25% by aligning creative to account-based intent signals using A/B testing, web analytics and landing page optimization.</p>
         </Reveal>
         <Reveal className="campaign" delay={120}>
           <div className="viz viz-aiforce"><AIForceViz /></div>
@@ -137,9 +137,9 @@ function Campaigns() {
           <h3>Delhi Airport</h3>
           <div className="metrics">
             <div className="m"><div className="v">₹50L</div><div className="k">Spend</div></div>
-            <div className="m"><div className="v">1.2M+</div><div className="k">Impressions</div></div>
+            <div className="m"><div className="v">1.5M+</div><div className="k">Impressions</div></div>
           </div>
-          <p>Out-of-home takeover at Delhi Airport during AI Impact Summit. End-to-end management — creative, vendor, placement, measurement.</p>
+          <p>Out-of-home takeover at Delhi Airport during AI Impact Summit. End-to-end management — vendor selection, ad space placement and budgeting, creative and copy finalisation, measurement.</p>
         </Reveal>
       </div>
     </section>

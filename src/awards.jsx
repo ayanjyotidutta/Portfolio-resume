@@ -1,17 +1,16 @@
 function Awards() {
   const edu = [
     { y: '2021-23', t: 'MBA · SJMSOM, IIT Bombay', s: 'CGPA 8.58 / 10 · Top 10% (4 Merit Scholarships)' },
-    { y: '2015-19', t: 'B.Tech · Mechanical Engineering, NIT Durgapur', s: 'CGPA 8.88 / 10 · Nitya Gopal & Hiramoti Saha Memorial Award' },
+    { y: '2015-19', t: 'B.Tech · Mechanical Engineering, NIT Durgapur', s: 'CGPA 8.88 / 10 · Nitya Gopal & Hiramoti Saha Scholarship' },
     { y: '2015', t: 'Class XII · Delhi Public School, Duliajan', s: '93%' },
-    { y: '2013', t: 'Class X · Delhi Public School, Duliajan', s: '10 / 10 CGPA' },
+    { y: '2013', t: 'Class X · Delhi Public School, Duliajan', s: '10 CGPA' },
   ];
   const awards = [
     { y: '2026', t: 'Awarded "Project of the Year"', s: ' For Gartner VOC Campaign among 20+ submissions from different teams across marketing.' },
-    { y: '2025', t: 'Fast Growing Brand Manager of the Year', s: 'HCLTech — for partnerships with valuation agencies driving brand growth' },
-    { y: '2025', t: 'Q3 Performance Recognition', s: 'Amongst 400+ marketers — for leading the Gartner VOC campaign' },
+    { y: '2024-25', t: 'Fastest Growing Brand Manager of the Year', s: 'HCLTech internal award for leading brand valuation agency partnerships that drove the fastest-growing IT Services brand ranking for two consecutive years.' },
     { y: '2022', t: 'National Finalist · Tally BizWiz', s: 'Top finalist out of 2,000 teams in India' },
     { y: '2022', t: 'Summer Course: Europe Inside Out', s: 'Katholieke Universiteit Leuven, Belgium' },
-    { y: '—', t: 'Google PM Certificate · Google Digital Marketing', s: 'Plus Power BI Data Analytics certification' },
+    { y: '2021-23', t: 'Google PM Certificate · Google Digital Marketing', s: 'Plus Power BI Data Analytics certification' },
     { y: '2015', t: 'Intl. Rank 3 · Maths Olympiad', s: 'International Olympiad of Mathematics, final level' },
   ];
   return (
